@@ -32,3 +32,7 @@
 ## Visualization Tools
 
 - We intent to use D3, javascript, and other tools to build interactive visualization on website.
+- 
+## Oct 5 2015
+- Pushed code for reading json file and running preliminary analysis on the hillary dataset
+
