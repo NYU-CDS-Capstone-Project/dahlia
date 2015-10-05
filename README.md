@@ -27,8 +27,12 @@
 
 - General decription of the dataset: count hashtags, number of tweets in a time series
 - Name entity recognition research. [LINK](http://www.sciencedirect.com/science/article/pii/S0004370212000276)
-- Public opinion analysis and prediction of award.
+- Public opinion analysis and prediction of award. [LINK](http://delivery.acm.org/10.1145/2340000/2337551/a66-paltoglou.pdf?ip=216.165.95.72&id=2337551&acc=ACTIVE%20SERVICE&key=36E5A5D4E382B3FA%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&CFID=550903582&CFTOKEN=65484671&__acm__=1444078116_3245547784ac583d81e3a2ab37a00c10)
 
 ## Visualization Tools
 
 - We intent to use D3, javascript, and other tools to build interactive visualization on website.
+
+## Oct 5 2015
+- Pushed code for reading json file and running preliminary analysis on the hillary dataset
+
