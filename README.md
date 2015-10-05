@@ -26,7 +26,7 @@
 #### Analysis Tasks
 
 - General decription of the dataset: count hashtags, number of tweets in a time series
-- Name entity recognition research. [LINK](http://www.mitpressjournals.org/doi/pdf/10.1162/COLI_a_00178)
+- Name entity recognition research. [LINK](http://www.sciencedirect.com/science/article/pii/S0004370212000276)
 - Public opinion analysis and prediction of award.
 
 ## Visualization Tools
