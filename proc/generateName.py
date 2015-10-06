@@ -1,14 +1,14 @@
 #!/usr/bin/env python
-import zipimport
-importer = zipimport.zipimporter('nltkandnameparser.mod')
-nameparser = importer.load_module('nameparser')
-nltk = importer.load_module('nltk') 
+#import zipimport
+#importer = zipimport.zipimporter('nltkandnameparser.mod')
+#nameparser = importer.load_module('nameparser')
+#nltk = importer.load_module('nltk') 
 
 import os
 import sys
-#from testnltk import sent_tokenize, word_tokenize, pos_tag, ne_chunk
-#import testnltk
-#from testnameparser.parser import HumanName
+from nltk import sent_tokenize, word_tokenize, pos_tag, ne_chunk
+import nltk
+#from nameparser.parser import HumanName
 
 def get_human_names(text):
     tokens = nltk.tokenize.word_tokenize(text)
