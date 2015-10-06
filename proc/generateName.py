@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+import zipimport
+importer = zipimport.zipimporter('nltkandnameparser.mod')
+yaml = importer.load_module('nameparser')
+nltk = importer.load_module('nltk') 
 
 from nameRecognition import *
 import os

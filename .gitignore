@@ -1,4 +1,5 @@
 *.gz
+*.mod
 *.tar
 *.json
 *sw[pod]
