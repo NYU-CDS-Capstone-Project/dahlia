@@ -38,9 +38,9 @@ def analyze_count(out, title):
     y = np.array(count)
     x_label = np.array(name)
     plt.figure(figsize=(20,10))
-    plt.xticks(x, x_label, rotation = 90, fontsize = 40)
+    plt.xticks(x, x_label, rotation = 90, fontsize = 18)
     plt.bar(x, y)
-    plt.title(title, fontsize = 40)
+    plt.title(title, fontsize = 30)
     plt.show()
 
 # Open the mapreduce output and sort the elements by their individual counts
