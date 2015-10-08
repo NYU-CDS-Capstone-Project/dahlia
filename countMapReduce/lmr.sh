@@ -7,4 +7,5 @@ cat ./*.json | ./countMapReduce/countHash_map.py | sort | ./countMapreduce/count
 cat ./*.json | ./countMapReduce/countLoca_map.py | sort | ./countMapReduce/countLoca_reduce.py > result_loca
 cat ./*.json | ./countMapReduce/countMention_map.py | sort | ./countMapReduce/countMention_reduce.py > result_mention
 cat ./*.json | ./countMapReduce/countTweet_map.py | sort | ./countMapReduce/countTweet_reduce.py > result_tweet
+cat ./*.json | ./countMapReduce/countSource_map.py | sort | ./countMapReduce/countSource_reduce.py > result_source
  
