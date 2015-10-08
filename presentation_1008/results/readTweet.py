@@ -5,6 +5,8 @@ from operator import *
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Graph the top n in the following fields: tweets, users, location, hashtags and mentions. 
+
 def sortLine(inp, top):
 	lines = []
 	for line in inp.readlines():
