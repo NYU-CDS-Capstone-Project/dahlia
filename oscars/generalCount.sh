@@ -5,3 +5,4 @@ cat ./filteredData/hashtags |tr '[:upper:]' '[:lower:]'| sort | ../proc/count.py
 cat ./filteredData/retweetText |tr '[:upper:]' '[:lower:]'| sort |../proc/count.py > retweetCount
 cat ./filteredData/source |tr '[:upper:]' '[:lower:]'| sort | ../proc/count.py > sourceCount
 cat ./filteredData/screen_name |tr '[:upper:]' '[:lower:]'| sort | ../proc/count.py > nameCount
+cat ./filteredData/userMention |tr '[:upper:]' '[:lower:]'| sort | ../proc/count.py> mentionCount
