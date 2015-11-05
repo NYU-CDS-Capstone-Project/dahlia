@@ -20,6 +20,8 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../bootstrap-3.3.5/docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <script type="text/javascript" src="d3/d3.v3.js"></script>
+    <script src="d3-cloud/build/d3.layout.cloud.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -68,5 +70,54 @@
     <script src="../bootstrap-3.3.5/docs/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../bootstrap-3.3.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+    var fill = d3.scale.category20();
+    d3.csv("wordTfidf.csv", function(d) {
+        return {
+          text: d.word,
+          size: +d.tfidf
+        }
+      },
+      function(data) {
+        d3.layout.cloud().size([960, 600]).words(
+          data
+          )
+          .rotate(function() {
+            return ~~(Math.random() * 2) * 90;
+          })
+          .font("Impact")
+          .fontSize(function(d) {
+            return d.size;
+          })
+          .on("end", draw)
+          .start();
+
+        function draw(words) {
+          console.log(words);
+          d3.select("body").append("svg")
+            .attr("width", 960)
+            .attr("height", 600)
+            .append("g")
+            .attr("transform", "translate(150,150)")
+            .selectAll("text")
+            .data(words)
+            .enter().append("text")
+            .style("font-size", function(d) {
+              return d.size + "px";
+            })
+            .style("font-family", "Impact")
+            .style("fill", function(d, i) {
+              return fill(i);
+            })
+            .attr("text-anchor", "middle")
+            .attr("transform", function(d) {
+              return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+            })
+            .text(function(d) {
+              return d.text;
+            });
+        }
+      });
+  </script>
   </body>
 </html>
