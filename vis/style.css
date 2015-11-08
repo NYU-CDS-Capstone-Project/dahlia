@@ -17,6 +17,3 @@ body {
   shape-rendering: crispEdges;
 }
 
-.btn.active {
-	background-color: red;
-}

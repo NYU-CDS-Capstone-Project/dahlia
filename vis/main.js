@@ -1,8 +1,7 @@
 $(document).ready(init);
 
 function init() {
-	drawDiagram(d3.select('#d1'));
-	drawDiagram(d3.select('#d2'));
+	drawCloud(d3.select('#word-cloud'));
 
 	$('.btn').click(function() {
 		$('.btn').removeClass('active');
