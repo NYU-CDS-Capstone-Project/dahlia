@@ -36,3 +36,35 @@
 ## Oct 5 2015
 - Pushed code for reading json file and running preliminary analysis on the hillary dataset
 
+## Nov 8 2015: Re-structuring this repository
+### Data
+#### Hillary
+- Preliminary: basic counts of fields (used for the exploratory data presentation)
+- dataForVis: processed data for d3 visualization
+
+#### Oscar
+- OscarNameCount: data derived from name entity tagger on the tweet texts, which gives the number of occurrences of names
+- filteredData: Fields extracted from Oscar-related tweets
+- Rest: Counts of each field data file
+
+### Document
+- All the references file and project descriptions
+
+### Proc
+#### bashFilter
+- Scripts for running lmr (local map reduce), jq, counting data, and generating data for d3 (hier_bund.sh)
+
+#### countMapReduce
+- MapReduce scripts for processing the raw field data extracted using jq
+
+#### nameRecognition
+- Scripts for generating the name entity from the tweets
+
+#### proc_d3
+- Scripts for processing data into the format that can be used for d3 visualization 
+- Normally takes the data processed by jq
+
+### Vis
+- Contains all the files needed for constructing the webpage
+
+
