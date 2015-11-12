@@ -64,5 +64,5 @@ if __name__ == '__main__':
 	# data for the hierarchical bundling graph
 	data_hierBundling = hier_bundling_data(user,mention,stats)
 	with open('data_hierBund.json','wb') as f:
-		json.dump('../../Data/Hillary/dataForVis/data_hierBundling', f)
+		json.dump(f, '../../Data/Hillary/dataForVis/data_hierBundling')
 	
