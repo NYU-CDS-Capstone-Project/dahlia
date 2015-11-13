@@ -1,1 +1,1 @@
-# Capstone Visualization
+# CapstoneVIS
