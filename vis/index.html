@@ -9,8 +9,10 @@
     <script src="bower_components/d3-cloud/build/d3.layout.cloud.js"></script>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
 
-    <script type="text/javascript" src="dashboard_graph.js"></script>   
+    <script type="text/javascript" src="dashboard_graph.js"></script> 
+    <script type="text/javascript" src="sequences.js"></script>  
     <script type="text/javascript" src="word-cloud.js"></script>
     <script type="text/javascript" src="hier_bund.js"></script>
     <script type="text/javascript" src="main.js"></script>
@@ -60,16 +62,37 @@
           <h2>word cloud</h2>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12" id="dashboard">
           <h2>dashboard</h2>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12" id="hier">
           <h2>Hier Bund</h2>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-10" id="sunburst">
+          <h2>sunburst</h2>
+          <div id="sequence"></div>
+            <div id="chart">
+              <div id="explanation" style="visibility: hidden;">
+                <span id="percentage"></span><br/>
+                of tweets begin with this sequence of words
+              </div>
+            </div>
+        </div>
+        <div class="col-md-2" id="sidebar">
+          <input type="checkbox" id="togglelegend"> Legend<br/>
+          <div id="legend" style="visibility: hidden;"></div>
+        </div>
+      </div>
+
+    </div>
 
       <hr>
 
