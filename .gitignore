@@ -6,3 +6,4 @@
 *sw[pod]
 *.py[cod]
 .ipynb_checkpoints
+*retweetText
