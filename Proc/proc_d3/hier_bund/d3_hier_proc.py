@@ -41,7 +41,8 @@ def hier_bundling_data(user,mention,stats):
 	# data: flat out 'result' into the form: {'name':user, 'imports':mention, 'size':stats_count}
 	# can adjust the size of the data by modiying the range of k[1] (stats_count) since the d3 limits the 
 	# size of the data passed
-	data = [{'name': 'group.X.%s' % (k[0]), 'imports': v, "size":k[1]} for k,v in result.items() if k[1] > 1080500]
+    # data = [{'name': 'group.X.%s' % (k[0]), 'imports': v, "size":k[1]} for k,v in result.items() if k[1] > 1080500]
+    data = sorted([{'name': 'group.X.%s' % (k[0]), 'imports': v, "size":k[1]} for k,v in result.items()],key=lambda x:x['size'],reverse=True)[:125]
 
 	mentions=list(itertools.chain(*[i['imports'] for i in data]))
 	names = [i['name'] for i in data]
