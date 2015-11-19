@@ -54,7 +54,7 @@ def buildData(text):
 
 	preliminary_final = []
 	for i in preliminary:
-		element = '-'.join(i[:min(len(i)-1,10)])
+		element = '-'.join(j.lower() for j in i[:min(len(i)-1,10)])
 		if len(i) < 10:
 			element = element + str('-end')
 		preliminary_final.append(element)
@@ -79,6 +79,6 @@ if __name__ == '__main__':
 	color = ['3182bd','6baed6','9ecae1','c6dbef','e6550d','fd8d3c','fdae6b','fdd0a2','31a354','74c476','a1d99b',
 			'c7e9c0','756bb1','9e9ac8','bcbddc','dadaeb','636363','969696','bdbdbd','d9d9d9']
 	for i in set(all_words):
-		color_profile[i[0]] = random.choice(color)
+		color_profile[i[0].lower()] = random.choice(color)
 	json.dump(color_profile,open('color_profile.json','wb'))
 
