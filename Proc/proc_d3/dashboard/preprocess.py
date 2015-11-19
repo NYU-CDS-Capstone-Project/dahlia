@@ -10,8 +10,10 @@ from readTweet import *
 import reverse_geocoder as rg
 
 # Retrive the top three hashtags from the preprocessed raw data
-hash_top = sortLine(10, 'result_hash.txt')
-tag1, tag2, tag3 = hash_top[0][0], hash_top[1][0], hash_top[2][0]
+num_hash = 5
+
+hash_top = sortLine(num_hash, 'result_hash.txt')
+
 listStates=['Alabama', 'Alaska','Arizona','Arkansas','California','Colorado', 'Connecticut', 'Delaware', 'District of Columbia',
            'Florida','Georgia','Hawaii', 'Idaho', 'Illinois','Indiana', 'Iowa', 'Kansas','Kentucky','Louisiana','Maine','Maryland',
            'Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey',
@@ -39,31 +41,36 @@ def findLocation(hashtag, coordinates):
 
 def makeData(placeFinal):
 	print 'Dumping data into json...'
-	tag_1 = []
-	tag_2 = []
-	tag_3 = []
-	for i in placeFinal:
-		if tag1 in i[1]:
-			tag_1.append(i[0])
-		if tag2 in i[1]:
-			tag_2.append(i[0])
-		if tag3 in i[1]:
-			tag_3.append(i[0])
-	cnt1 = collections.Counter(tag_1)
-	cnt2 = collections.Counter(tag_2)
-	cnt3 = collections.Counter(tag_3)
+	
+	# a list of tag1,tag2,tag3..... of how many the user defines
+	tag_total = []
+	for i in range(len(hash_top)):
+		tag_total.append(hash_top[i][0])
 
-	community = set(tag_1) ^ set(tag_2) ^ set(tag_3)
+	# taglist_total = [tag_1,tag_2,tag_3,tag_4,tag_5]
+	taglist_total = [[] for i in range(len(tag_total))]
+
+	for i in placeFinal:
+		for j in range(len(tag_total)):
+			if tag_total[j] in i[1]:
+				taglist_total[j].append(i[0])
+
+	# collection of all the counters, aka cnt1,cnt2,cnt3....
+	cnt_total = [collections.Counter(i) for i in taglist_total]
+	
+	# common set of states that appear in all list
+	community = set.intersection(*[set(i.keys()) for i in cnt_total])
 
 	data = []
 	for i in community:
-		data.append({'State': i, 'freq':{tag1: int(cnt1[i]), tag2: int(cnt2[i]), tag3:int(cnt3[i])}})
-
+		frequency = {tag_total[j]:int(cnt_total[j][i]) for j in range(len(tag_total))}
+		data.append({'State':i, 'freq': frequency})
 	data_new = sorted(data, key=lambda x: sum(x['freq'].values()), reverse=True)[:8]
 	json.dump(data_new, open('dashboard_data.json','wb'))
 	print 'Done'
 
 if __name__ == '__main__':
+	
 	hashtag = pickle.load(open('hashtag.pkl','rb'))
 	coordinates = pickle.load(open('coordinates.pkl','rb'))
 
