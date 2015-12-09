@@ -46,7 +46,12 @@ def select_field(jsonLine):
         person = str(l['user']['screen_name'])
     except:
         person = 'null'
-    return [time, hashtag, loca, coord, mention, source, tweet, person]
+    try:
+        statsCount = int(l['user']['statuses_count'])
+    except:
+        statsCount = 'null'
+
+    return [time, hashtag, loca, coord, mention, source, tweet, person, statsCount]
 
 def load_data(path):
     '''
