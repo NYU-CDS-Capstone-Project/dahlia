@@ -1,4 +1,5 @@
 import json
+import itertools
 import gzip
 import tarfile
 import zipfile
@@ -16,7 +17,8 @@ def select_field(jsonLine):
     l = json.loads(jsonLine)
     time = str(l['created_at'])
     try:
-        hashtag = str(l['entities']['hashtags'][0]['text'])
+        hashtag = l['entities']['hashtags']
+        hashtag = [i['text'] for i in hashtag]
     except:
         hashtag = 'null'
     try:
@@ -34,6 +36,7 @@ def select_field(jsonLine):
     try:
         source = l['source']
         source = re.sub('<[^<]+?>', '', source)
+        source = source.decode('ascii', 'ignore')
     except:
         source = 'null'
     try:
@@ -118,7 +121,8 @@ def update_progress(progress):
 
 def count_single_field(field, data):
     if field == 'hashtag':
-        out = Counter([i[1] for i in data if i[1] != 'null'])
+        out = [i[1] for i in data if i[1] != 'null']
+        out = Counter(list(itertools.chain.from_iterable(out)))
     if field == 'coordinates':
         coord = [i[3] for i in data if i[3] != 'null']
         result = rg.search(coord)
