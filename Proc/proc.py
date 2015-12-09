@@ -16,14 +16,35 @@ import os
 def select_field(jsonLine):
     l = json.loads(jsonLine)
     time = str(l['created_at'])
-    hashtag = str(l['entities']['hashtags'][0]['text'])
-    loca = str(l['user']['location'])
-    coord = str(l['coordinates']['coordinates'])
-    mention = l['entities']['user_mentions'][0]['screen_name']
-    source_ = l['source'].encode('ascii', 'ignore')
-    source = re.sub('<[^<]+?>', '', source_)
-    tweet = str(l['retweeted_status']['text'])
-    person = str(l['user']['screen_name'])
+    try:
+        hashtag = str(l['entities']['hashtags'][0]['text'])
+    except:
+        hashtag = 'null'
+    try:
+        loca = str(l['user']['location'])
+    except:
+        loca = 'null'
+    try:
+        coord = tuple(l['coordinates']['coordinates'])
+    except:
+        coord = 'null'
+    try:
+        mention = l['entities']['user_mentions'][0]['screen_name']
+    except:
+        mention = 'null'
+    try:
+        source_ = l['source'].encode('ascii', 'ignore')
+        source = re.sub('<[^<]+?>', '', source_)
+    except:
+        source = 'null'
+    try:
+        tweet = str(l['retweeted_status']['text'])
+    except:
+        tweet = 'null'
+    try:
+        person = str(l['user']['screen_name'])
+    except:
+        person = 'null'
     return [time, hashtag, loca, coord, mention, source, tweet, person]
 
 def load_data(path):
@@ -66,11 +87,11 @@ def load_data(path):
                     except:
                         pass
             ct += 1
-            update_progress(ct/float(len(flist)))
+            update_progress(float("{0:.4f}".format(ct/float(len(flist)))))
         except:
             raise ValueError('Error with open json.gz file')
-    print "Done! Your dataset has %d of valid tweets in total"%(len(Data))
-    return numpy.array(Data)
+    print "Done! Your dataset has of valid tweets in total"%(len(Data))
+    return Data
 
 def update_progress(progress):
     barLength = 10 # Modify this to change the length of the progress bar
