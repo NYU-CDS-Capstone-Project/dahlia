@@ -46,8 +46,8 @@ echo "Preliminary Dahlia configuration ..."
 tput sgr0
 echo ""
 
-chmod 755 ~/dahlia/run.sh
-chmod 755 ~/dahlia/Proc/deploy.sh
+chmod 755 $SERVERPATH/run.sh
+chmod 755 $SERVERPATH/Proc/deploy.sh
 
 echo ""
 tput bold
@@ -55,6 +55,6 @@ echo "Done!"
 tput sgr0
 echo ""
 
-echo "Please visit your new Dahlia installation at: http://$SERVERNAME/"
+echo "Please visit your new Dahlia installation at: http://$SERVERNAME/dahlia/Vis/"
 echo ""
 
