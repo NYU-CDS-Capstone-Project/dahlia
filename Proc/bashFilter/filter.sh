@@ -5,4 +5,4 @@ gzcat ../../Data/Hillary/hillary/* | ./jq-osx-amd64 '.entities| .hashtags |.[]?|
 gzcat ../../Data/Hillary/hillary/* | ./jq-osx-amd64 '.source' > ../../Data/Hillary/result_source.txt
 gzcat ../../Data/Hillary/hillary/* | ./jq-osx-amd64 '.retweeted_status| .text'> ../../Data/Hillary/result_tweet.txt
 gzcat ../../Data/Hillary/hillary/* | ./jq-osx-amd64 '.user| .screen_name' > ../../Data/Hillary/result_user.txt
-gzcat ../../Data/Hillary/hillary/* | ./jq-osx-amd64 '.coordinates| .coordinates| tostring' > ../../Data/Hillary/coordinates.txt
+gzcat ../../Data/Hillary/hillary/* | ./jq-osx-amd64 '.coordinates| .coordinates| tostring' > ../../Data/Hillary/result_coord.txt

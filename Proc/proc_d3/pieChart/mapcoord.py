@@ -6,6 +6,18 @@ import os
 import cPickle
 import reverse_geocoder as rg
 from collections import Counter
+
+def txtCoor(infile):
+    coord = []
+    with open(infile,'r') as f:
+        for i in f.readlines():
+            l = eval(i.strip())
+            if len(l) != 4:
+                l = tuple(eval(l))
+                coord.append(l)
+    results_ = rg.search(coord)
+    c = Counter([i['admin1'] for i in results_])
+    return c
 def mapCoor(coo):
     results_ = rg.search(coo)
     c = Counter([i['admin1'] for i in results_])
@@ -19,8 +31,14 @@ def dict2csv(dic, outfile):
     f.close()
 
 if __name__ =='__main__':
-    c = cPickle.load(open('../dashboard/coordinates.pkl','rb'))
-    c = mapCoor(c)
-    dict2csv(c, '../../../Vis/data/')
-    
+    '''
+    Hillary Data
 
+    with open('../dashboard/coordinates.pkl','rb') as f:
+        count = cPickle.load(f)
+    c = mapCoor(count)
+    dict2csv(c, '../../../Vis/data/stateCount.csv')
+    '''
+    #Oscar data
+    c = txtCoor('../../../Data/Oscar/result_coord.txt')
+    dict2csv(c, '../../../Vis/data_o/stateCount.csv')
