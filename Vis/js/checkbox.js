@@ -21,8 +21,6 @@ function checkBoxes(ContainedDiv){
         	parentElement.appendChild(checkbox);
         	checkbox.checked = true;
 
-        	// console.log(checkbox);
-
         	var label = document.createElement('label');
         	label.innerHTML = g;
         	parentElement.appendChild(label);

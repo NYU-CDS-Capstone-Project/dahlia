@@ -1,5 +1,7 @@
 body{
     margin:50px auto;
+    font-family: 'Helvetica Neue', Helvetica; 
+    font-weight: 300; padding: 20px;
 }
 path {  stroke: #fff; }
 path:hover {  opacity:0.9; }
@@ -7,7 +9,9 @@ rect:hover {  fill:blue; }
 .axis {  font: 10px sans-serif; }
 .legend tr{    border-bottom:1px solid grey; }
 .legend tr:first-child{    border-top:1px solid grey; }
-
+.center {
+  text-align: center;
+}
 .axis path,
 .axis line {
   fill: none;
@@ -121,8 +125,8 @@ rect:hover {  fill:blue; }
 
 #explanation {
   position: absolute;
-  top: 350px;
-  left: 428px;
+  top: 180px;
+  left: 400px;
   width: 140px;
   text-align: center;
   color: #666;

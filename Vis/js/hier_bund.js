@@ -1,5 +1,8 @@
 function drawHier(containerDiv) {
-	var diameter = 960,
+  var margin = {top: 20, right: 20, bottom: 20, left: 20};
+  var width = 960 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
+	var diameter = width,
 	    radius = diameter / 2,
 	    innerRadius = radius - 120;
 

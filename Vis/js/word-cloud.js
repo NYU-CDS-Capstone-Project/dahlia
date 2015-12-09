@@ -1,14 +1,15 @@
-function drawCloud(containerDiv) {
-  var width = 750,
-      height = 500,
+function drawCloud(infile, containerDiv) {
+  var margin = {top: 20, right: 10, bottom: 20, left: 10};
+  var width = 960 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
       scale = 700;
 
   //var nameScale = d3.scale.linear().range([10,150]);
 
   var fill = d3.scale.category20();
-  d3.csv("data/wordCount.csv", function(data) {
+  d3.csv(infile, function(data) {
     var names = data
-          .map(function(d) {return{text:d.word, size:+d.count/scale};})
+          .map(function(d) {return{text:d.word, size:+d.count/scale, count:+d.count};})
           .sort(function(a,b) {return d3.descending(a.size,b.size); })
           .slice(0,100);
     //nameScale.domain([
@@ -28,8 +29,8 @@ function drawCloud(containerDiv) {
   });
   function draw(words) {
     containerDiv.append("svg")
-        .attr("width", width)
-        .attr("height", height)
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")")
       .selectAll("text")
@@ -55,7 +56,7 @@ function drawCloud(containerDiv) {
       .style("left", offset.left)
       .style("top", offset.top)
       .select("#value")
-      .text(d.size*scale);
+      .text(d.count);
 
     d3.select("#tooltip").classed("hidden", false);
 
