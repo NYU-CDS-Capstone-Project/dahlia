@@ -1,0 +1,179 @@
+word,count
+Tabora,2
+Volyn,8
+Manyara,5
+Kogi,1
+Western Cape,940
+Makkah,8
+Middle Juba,3
+Ammochostos,8
+Oriental,1
+Plateau,29
+Rukwa,1
+Zufar,7
+Aden,6
+Extremadura,5
+Jizan,1
+Adamawa,3
+Azores,14
+Abu Dhabi,12
+Tadjourah,37
+Togdheer,54
+South-West Province,2
+Laccadives,37
+Rif-dimashq,1
+Kerguelen,12519
+Andalusia,28
+Yobe,1
+Nugaal,85
+Ta'izz,6
+Amhara,3
+Ar-Raqqah,28
+Voronezj,1
+Singida,1
+Imereti,1
+Alexandria,4
+Sikasso,1
+Sal,2
+Jan Mayen,51
+Sanaag,7
+Ar Riyad,7
+Lapland,8
+Nordland,4
+Svalbard,204
+Oromiya,2
+Al Wusta,37
+Eastern Province,1
+Bel Ombre,408
+Isiolo,18
+Adrar,1
+Mara,1
+Panevezys,1
+Anambra,1
+Mures,1
+Perm,3
+Garissa,7
+Mintaqat Ha'il,1
+Akwa Ibom,1
+Laayoune-Boujdour-Sakia El Hamra,1
+Najran,1
+English River,50
+Wajir,3
+Galguduud,288
+Djibouti,6
+Sao Tome Island,9
+Kilimanjaro,2
+Mtwara,1
+Lower Juba,17
+Anseba,1
+Machakos,2
+Murmansk,3
+Golestan,4
+Central,14
+Pafos,10
+Ribeira Grande,35
+Soqatra Governorate,31
+Tristan da Cunha,176
+Koulikoro,1
+Cascade,17
+Al Madinah al Munawwarah,2
+Bayelsa,29
+Anbar,4
+Kursk,1
+Port Glaud,66
+Kunene,1
+Sistan and Baluchestan,8
+Rivers,8
+Mbeya,1
+Gedo,43
+Canary Islands,55
+Finnmark Fylke,62
+Munster,2
+Aleppo,7
+Hiiraan,15
+Qaasuitsup,131
+Lamu,2
+Banaadir,14
+Middle Shabele,16
+Muhafazat al Hudaydah,1
+Abyan,1
+Raa Atoll,1
+Southern,19
+Grande Comore,1
+Shabwah,2
+Gash Barka,3
+Sardinia,1
+Pemba North,6
+Bakool,29
+Taraba,2
+Obock,2
+Kilifi,91
+Mopti,1
+Republic of Karelia,1
+Delta,1
+Mintaqat `Asir,2
+Muhafazat Hadramawt,120
+Anse Royale,4
+Woqooyi Galbeed,26
+Pwani,16
+Sa'dah,1
+Rodrigues,6
+Takamaka,53
+Mintaqat al Bahah,2
+Diana,15
+Balochistan,1
+Southern Red Sea Region,9
+Ondo,5
+Sool,8
+Castille-La Mancha,1
+Eastern Cape,790
+Awdal,16
+Al Buhayrah,2
+Kwara,4
+Annobon,4
+Jaroslavl,1
+Tanger-Tetouan,1
+Ash Sharqiyah,69
+Northern,1
+El Bayadh,14
+Al Jawf,30
+Lahij,1
+Lindi,37
+Al-Qassim,1
+Valencia,109
+Homs,9
+Lefkosia,2
+Keryneia,1
+Dikhil,3
+Cross River,1
+Kajiado,1
+Misto Sevastopol',1
+Al Mahrah,44
+Al Qadarif,2
+Dodoma,2
+Benue,3
+Erzurum,1
+Morogoro,6
+Turkana,5
+Murcia,16
+Troms,24
+Bari,8
+Kebbi,5
+Al Batinah,1
+Marsabit,2
+Bay,1
+South,1
+Lower Shabeelle,10
+Tiaret,1
+Arusha,2
+Mintaqat Tabuk,2
+Cuando Cubango,1
+Mudug,172
+Namibe,1
+Edo,4
+Laeaene,6
+Madeira,3
+Hama,2
+Antalya,4
+Omusati,2
+Kitui,12
