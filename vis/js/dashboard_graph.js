@@ -1,5 +1,5 @@
 function drawDash(ContainerDiv) {
-    d3.json('./data/dashboard_data.json', function(error, freqData){
+    d3.json('./data_o/dashboard_data.json', function(error, freqData){
         if (error) throw error;
 
         dashboard(ContainerDiv,freqData);
