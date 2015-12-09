@@ -6,12 +6,11 @@ import shlex
 import subprocess
 import sys
 import string
-import nltk
-import goose
-from pprint import pprint
+from nltk.corpus import stopwords
 from collections import Counter
-import numpy as np
 import os
+import re
+import reverse_geocoder as rg
 
 def select_field(jsonLine):
     l = json.loads(jsonLine)
@@ -33,8 +32,8 @@ def select_field(jsonLine):
     except:
         mention = 'null'
     try:
-        source_ = l['source'].encode('ascii', 'ignore')
-        source = re.sub('<[^<]+?>', '', source_)
+        source = l['source']
+        source = re.sub('<[^<]+?>', '', source)
     except:
         source = 'null'
     try:
@@ -90,7 +89,7 @@ def load_data(path):
             update_progress(float("{0:.4f}".format(ct/float(len(flist)))))
         except:
             raise ValueError('Error with open json.gz file')
-    print "Done! Your dataset has of valid tweets in total"%(len(Data))
+    print "Done! Your dataset has %d valid tweets in total"%(len(Data))
     return Data
 
 def update_progress(progress):
@@ -111,3 +110,48 @@ def update_progress(progress):
     text = "\rPercent: [{0}] {1}% {2}".format( "#"*block + "-"*(barLength-block), progress*100, status)
     sys.stdout.write(text)
     sys.stdout.flush()
+
+def count_single_field(field, data):
+    if field == 'hashtag':
+        out = Counter([i[1] for i in data if i[1] != 'null'])
+    if field == 'coordinates':
+        coord = [i[3] for i in data if i[3] != 'null']
+        result = rg.search(coord)
+        out = Counter([i['admin1'] for i in result])
+    if field == 'mention':
+        out = Counter([i[4] for i in data if i[4] != 'null'])
+    if field == 'source':
+        out = Counter([i[5] for i in data if i[5] != 'null'])
+    if field == 'tweet':
+        out = Counter([i[6] for i in data if i[6] != 'null'])
+    if field == 'user':
+        out = Counter([i[7] for i in data if i[7] != 'null'])
+    return out
+
+def count_word(tweet_count, stopwords):
+    exclude = string.punctuation
+    stopsEng = list(stopwords.words("english"))
+    stopsEsp = list(stopwords.words("spanish"))
+    stops = stopsEng + stopsEsp
+    count = dict()
+    for k,v in tweet_count.items():
+        k = k.strip()
+        text = ''.join([i for i in k if i not in exclude]).lower()
+        text = text.split()
+        text = Counter([w for w in text if w not in stops])
+        for key, val in text.items():
+            if count.has_key(key):
+                count[key] += val * v
+            else:
+                count[key] = val * v
+    return count
+
+def dict_to_csv(dic, outfile):
+    with open(outfile, 'w') as f:
+        f.write('word,count\n')
+        for k,v in dic.items():
+            f.write('%s,%d\n'%(k,v))
+
+
+
+
