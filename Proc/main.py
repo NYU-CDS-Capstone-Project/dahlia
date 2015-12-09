@@ -1,11 +1,11 @@
-from .proc import *
+from proc import *
 
 def main():
     while True:
         try:
             dataset = raw_input('Please input the full path of your dataset, note that your data file must be .zip or .tar:\n')
             path =  os.getcwd()
-            if dataset = 'exit':
+            if dataset == 'exit':
                 raise KeyboardInterrupt
             data = load_data(dataset)
             break
@@ -17,17 +17,24 @@ def main():
             continue
     while True:
         try:
+            #Counting frequency for single fields
             fields = ['hashtag', 'coordinates', 'mention', 'source', 'tweet', 'user']
-            for f in field:
+            for f in fields:
+                print 'Processing %s'%(f)
                 out = count_single_field(f, data)
+                print '%d %s in total'%(len(out), f)
                 dict_to_csv(out, '%s/Vis/data/%s.txt'%(path, f))
                 if f == 'tweet':
-                    word = count_wourd(out, stopwords)
+                    print 'Processing words'
+                    word = count_word(out, stopwords)
+                    print '%d words in total'%(len(word))
                     dict_to_csv(word, '%s/Vis/data/word.txt'%(path))
+
 
         except KeyboardInterrupt:
             print 'terminated!'
             sys.exit()
 
-
+if __name__ == '__main__':
+    main()
 
