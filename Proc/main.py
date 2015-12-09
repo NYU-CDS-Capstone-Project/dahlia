@@ -23,12 +23,15 @@ def main():
                 print 'Processing %s'%(f)
                 out = count_single_field(f, data)
                 print '%d %s in total'%(len(out), f)
-                dict_to_csv(out, '%s/Vis/data/%s.txt'%(path, f))
                 if f == 'tweet':
+                    dict_to_dsv(out, '%s/Vis/data/%s.csv'%(path, f), '|')
                     print 'Processing words'
                     word = count_word(out, stopwords)
                     print '%d words in total'%(len(word))
-                    dict_to_csv(word, '%s/Vis/data/word.txt'%(path))
+                    dict_to_dsv(word, '%s/Vis/data/word.csv'%(path))
+                else:
+                    dict_to_dsv(out, '%s/Vis/data/%s.csv'%(path, f))
+            break
 
 
         except KeyboardInterrupt:

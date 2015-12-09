@@ -26,7 +26,7 @@ def select_field(jsonLine):
     except:
         loca = 'null'
     try:
-        coord = tuple(l['coordinates']['coordinates'])
+        coord = tuple(l['coordinates']['coordinates'])[::-1]
     except:
         coord = 'null'
     try:
@@ -36,7 +36,6 @@ def select_field(jsonLine):
     try:
         source = l['source']
         source = re.sub('<[^<]+?>', '', source)
-        source = source.decode('ascii', 'ignore')
     except:
         source = 'null'
     try:
@@ -150,11 +149,13 @@ def count_word(tweet_count, stopwords):
                 count[key] = val * v
     return count
 
-def dict_to_csv(dic, outfile):
+def dict_to_dsv(dic, outfile, d = ','):
     with open(outfile, 'w') as f:
-        f.write('word,count\n')
+        f.write('word%scount\n'%(d))
         for k,v in dic.items():
-            f.write('%s,%d\n'%(k,v))
+            k = k.encode('utf-8')
+            if k != '':
+                f.write('%s%s%d\n'%(k,d,v))
 
 
 
