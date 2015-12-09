@@ -30,7 +30,7 @@ def select_field(jsonLine):
     except:
         coord = 'null'
     try:
-        mention = l['entities']['user_mentions'][0]['screen_name']
+        mention = [i['screen_name'] for i in l['entities']['user_mentions']]
     except:
         mention = 'null'
     try:
