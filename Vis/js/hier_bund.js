@@ -1,4 +1,4 @@
-function drawHier(containerDiv) {
+function drawHier(infile,containerDiv) {
   var margin = {top: 20, right: 20, bottom: 20, left: 20};
   var width = 960 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
@@ -28,7 +28,7 @@ function drawHier(containerDiv) {
 	var link = svg.append("g").selectAll(".link"),
 	    node = svg.append("g").selectAll(".node");
 
-	d3.json("./data/hier_bund.json", function(error, classes) {
+	d3.json(infile, function(error, classes) {
 	  if (error) throw error;
 
 	  var nodes = cluster.nodes(packageHierarchy(classes)),

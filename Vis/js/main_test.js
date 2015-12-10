@@ -1,20 +1,20 @@
 $(document).ready(init);
 
 function init() {
-	drawCloud('./data/word.csv', d3.select('#word-cloud'));
-	showReel('./data/data_tweet.csv', d3.select('#showReel'));
-	checkBoxes('./data/dashboard_data.json', d3.select('#dashboard'));
-	drawDash('./data/dashboard_data.json', d3.select('#dashboard'));
-	drawHier('./data/hier_bund.json', d3.select('#hier'));
-	drawSunburst('./data/tweet_text.csv', "data/color_profile.json", d3.select("#chart"));
-	drawTable('data/tweet.csv',d3.select('#table'));
-	slide('data/result_tweet.txt', d3.select('#slider'),d3.select('#table'),d3.select('#sliderText'));
-	stackedArea('data/data_tweet.json', d3.select('#horizonGraph svg'));
+	drawCloud('./data_o/word.csv', d3.select('#word-cloud'));
+	showReel('./data_o/data_tweet.csv', d3.select('#showReel'));
+	checkBoxes('./data_o/dashboard_data.json', d3.select('#dashboard'));
+	drawDash('./data_o/dashboard_data.json', d3.select('#dashboard'));
+	drawHier('./data_o/hier_bund.json', d3.select('#hier'));
+	drawSunburst('./data_o/tweet_text.csv', "data_o/color_profile.json", d3.select("#chart"));
+	drawTable('data_o/tweet.csv',d3.select('#table'));
+	slide('data_o/result_tweet.txt', d3.select('#slider'),d3.select('#table'),d3.select('#sliderText'));
+	stackedArea('data_o/data_tweet.json', d3.select('#horizonGraph svg'));
 
-	var pieFiles = {'hashtag':'data/hashtag.csv',
-	                'coordinates':'data/coordinates.csv',
-	                'source':'data/source.csv',
-	                'user':'data/mention.csv'}	
+	var pieFiles = {'hashtag':'data_o/hashtag.csv',
+	                'coordinates':'data_o/coordinates.csv',
+	                'source':'data_o/source.csv',
+	                'user':'data_o/mention.csv'}	
 	selectPie(pieFiles, d3.select('#pie1'));
 	$('.placeholders').hide(); 
 	$('#plot1').show();

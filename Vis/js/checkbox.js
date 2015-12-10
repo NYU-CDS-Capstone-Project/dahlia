@@ -1,5 +1,5 @@
-function checkBoxes(ContainedDiv){
-	d3.json('./data/dashboard_data.json', function(error, freqData){
+function checkBoxes(infile, ContainedDiv){
+	d3.json(infile, function(error, freqData){
         if (error) throw error;
         
         var tagNames = [];

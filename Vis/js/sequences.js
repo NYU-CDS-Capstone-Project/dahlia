@@ -1,4 +1,4 @@
- function drawSunburst() {
+function drawSunburst(infile,colorFile,containerDiv) {
   // Dimensions of sunburst.
   var margin = {top: 20, right: 10, bottom: 20, left: 10};
   var width = 960 - margin.left - margin.right,
@@ -10,7 +10,7 @@
 
   var colors;
 
-  d3.json("data/color_profile.json", function(error, data) {
+  d3.json(colorFile, function(error, data) {
     if (error) throw error;
     
     colors = data;
@@ -19,7 +19,7 @@
   // Total size of all segments; we set this later, after loading the data.
   var totalSize = 0; 
 
-  var vis = d3.select("#chart").append("svg:svg")
+  var vis = containerDiv.append("svg:svg")
       .attr("width", width)
       .attr("height", height)
       .append("svg:g")
@@ -38,7 +38,7 @@
 
   // Use d3.text and d3.csv.parseRows so that we do not need to have a header
   // row, and can receive the csv as an array of arrays.
-  d3.text("data/tweet_text.csv", function(text) {
+  d3.text(infile, function(text) {
     var csv = d3.csv.parseRows(text);
     var json = buildHierarchy(csv);
     createVisualization(json);

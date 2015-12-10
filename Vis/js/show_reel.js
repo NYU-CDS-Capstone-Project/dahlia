@@ -1,4 +1,4 @@
-function showReel(containerDiv) {
+function showReel(infile,containerDiv) {
   var m = [20, 20, 30, 20],
       w = 960 - m[1] - m[3],
       h = 500 - m[0] - m[2];
@@ -37,7 +37,7 @@ function showReel(containerDiv) {
       .x(function(d) { return x(d.date); })
       .y1(function(d) { return y(d.price); });
 
-  d3.csv("data/data_tweet.csv", function(data) {
+  d3.csv(infile, function(data) {
     var parse = d3.time.format("%b-%d-%Y-%H").parse;
 
     // Nest stock values by symbol.

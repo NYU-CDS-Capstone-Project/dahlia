@@ -51,10 +51,10 @@ function drawTable(infile, containerDiv, opt_n) {
     });
 }
 
-function slide(containerDiv, tableDiv, textContainerDiv){ 
+function slide(infile, containerDiv, tableDiv, textContainerDiv){ 
     containerDiv.call(d3.slider().axis(true).min(10)
         .on("slideend", function(evt, value) {
-            drawTable('data/result_tweet.txt', tableDiv, value);
+            drawTable(infile, tableDiv, value);
             textContainerDiv.text(value);  
         }));
 };

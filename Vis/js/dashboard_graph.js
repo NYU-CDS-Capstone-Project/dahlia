@@ -1,5 +1,5 @@
-function drawDash(ContainerDiv) {
-    d3.json('./data/dashboard_data.json', function(error, freqData){
+function drawDash(infile, ContainerDiv) {
+    d3.json(infile, function(error, freqData){
         if (error) throw error;
         // var r0 = d3.selectAll('input[type="checkbox"]:checked').node().value;
         var r0 = $('input:checkbox:checked').map(function() {
