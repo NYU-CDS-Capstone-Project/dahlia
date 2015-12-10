@@ -1,0 +1,754 @@
+word,count
+Durango,1
+Bicol,2
+Languedoc-Roussillon,3
+Friesland,2
+Bolivar,12
+Lara,10
+Al Jizah,11
+Gaziantep,3
+Los Rios,7
+Indiana,280
+Louisiana,82
+Riau,1
+Trujillo Alto,9
+Morovis,1
+Trentino-Alto Adige,7
+Basilicate,1
+Western,11
+Manabi,4
+Rio Grande do Sul,107
+Tripoli,1
+Massachusetts,446
+Paraiba,19
+Kirklareli,1
+Ha Noi,3
+Alaska,5
+Heredia,17
+Vaermland,1
+Abuja Federal Capital Territory,4
+Araucania,9
+South Australia,10
+Bratislavsky,1
+Hermanas Mirabal,4
+Brussels Capital,2
+Saitama,1
+Meta,2
+Penang,3
+Osaka,1
+East Kalimantan,10
+Puerto Plata,2
+Varsinais-Suomi,2
+Cesar,6
+Parana,59
+Rostov,2
+Bavaria,23
+Trabzon,1
+Rhone-Alpes,12
+Risaralda,3
+Waikato,1
+Ancash,8
+Harju,2
+Aragua,27
+Ho Chi Minh City,4
+Maryland,354
+Gurabo,6
+Saint Catherine,2
+Quetzaltenango,1
+Arizona,198
+Cundinamarca,35
+Chiapas,10
+Cordoba,25
+Zacatecas,2
+San Luis Potosi,15
+Kuala Lumpur,17
+Eskisehir,3
+West Bank,3
+Amapa,8
+Bern,1
+Tabasco,13
+Baja California Sur,4
+Tuscany,35
+Arica y Parinacota,2
+Rondonia,1
+Amambay,1
+Al Madinah al Munawwarah,3
+Pest,1
+Lagunes,1
+Merida,11
+La Vega,1
+Limousin,2
+Ohio,513
+Zurich,2
+Satakunta,1
+Neamt,1
+Shizuoka,1
+South Sumatra,3
+West Sumatra,1
+Mbeya,1
+Abu Dhabi,2
+Limon,4
+New Providence,5
+Maine,48
+Zarqa,1
+Istanbul,123
+Munster,56
+Dar es Salaam,4
+Aguascalientes,4
+Central Jutland,18
+Alberta,82
+Wales,54
+Muhafazat al Qahirah,22
+Dobrepolje,1
+Camuy,1
+South Holland,13
+Gaevleborg,1
+Baja California,29
+Banten,2
+Prizren,2
+Quintana Roo,22
+O'Higgins,6
+Monagas,9
+Leiria,1
+Friuli Venezia Giulia,7
+Franche-Comte,7
+San German,1
+Catano,6
+Oita,1
+Duzce,1
+Kranjska Gora,1
+Flanders,31
+Sucre,6
+North Sulawesi,5
+Lower Saxony,2
+Cayo,1
+Yauco,1
+Eastern Cape,2
+Bursa,3
+Bay Islands,1
+Beyrouth,2
+Nevada,95
+Asan,1
+Osjecko-Baranjska,1
+Yamanashi,1
+Northern,1
+Queretaro,16
+Pichincha,21
+Kerala,1
+Changwat Ubon Ratchathani,1
+Municipio de Juncos,1
+OEstergoetland,4
+Comayagua,3
+Penal/Debe,1
+Norrbotten,2
+Lefkosia,1
+Maldonado,6
+Aargau,3
+Caraga,1
+Arequipa,1
+Alagoas,8
+La Guajira,2
+Madre de Dios,1
+Madhya Pradesh,1
+Norte de Santander,8
+Al Ahmadi,6
+Alsace,2
+Miranda,91
+Falcon,5
+Anzoategui,5
+Zealand,3
+Samsun,1
+Campania,34
+Moskovskaya,4
+Managua,19
+Nebraska,61
+Kastamonu,1
+Nakhon Si Thammarat,1
+Montserrado,1
+Sonsonate,1
+Gjilan,1
+Putrajaya,3
+Esmeraldas,3
+Champagne-Ardenne,4
+Mexico,94
+Jaemtland,1
+NCT,3
+Edo,1
+Santo Domingo,11
+Az Zawiyah,1
+Tennessee,252
+Saint James,4
+Northern Ireland,30
+Silesian Voivodeship,1
+Manitoba,27
+San Miguel,1
+Mississippi,70
+Magallanes,1
+Al Asimah,7
+Western Cape,12
+Leinster,92
+Minnesota,274
+Illinois,690
+Chihuahua,11
+Guayas,42
+Sao Paulo,348
+Rheinland-Pfalz,3
+Texas,1117
+Taranaki,1
+Rajasthan,4
+Yucatan,19
+Antofagasta,5
+Jeollanam-do,1
+Liguria,11
+Adamawa,1
+Guatemala,17
+Coimbra,2
+West Virginia,62
+Magdalena,1
+Lampung,1
+San Lorenzo,2
+Central Visayas,6
+Porto,6
+Dubai,10
+British Columbia,140
+Moscow,13
+Entre Rios,2
+Al Farwaniyah,2
+Sindh,7
+Ra's al Khaymah,1
+Muhafazat Masqat,1
+Jakarta Raya,32
+Bucuresti,2
+Uttarakhand,1
+Skane,4
+South Dakota,15
+Ar Riyad,9
+Perlis,3
+Cantabria,4
+Dhaka,4
+Baladiyat ar Rayyan,3
+Loreto,1
+Chubut,3
+Vest-Agder,2
+Carolina,4
+Ile-de-France,143
+Sakha,1
+Michigan,367
+Bourgogne,6
+Yaracuy,5
+Hubei,2
+Hawke's Bay,1
+Andhra Pradesh,1
+Provence-Alpes-Cote d'Azur,31
+Kocaeli,4
+Aydin,1
+Papua,3
+San Cristobal,3
+Finnmark Fylke,1
+Tamuning,1
+Callao,23
+Maharashtra,35
+Aragon,8
+Barceloneta,1
+Borough of Arima,1
+South Province,1
+Kiambu,5
+St Peter Port,1
+Madrid,138
+Valparaiso,49
+Buskerud,1
+La Rioja,4
+Oaxaca,5
+Kowloon City,1
+Baki,2
+Hidalgo,7
+Ionian Islands,2
+Mexico City,210
+Ontario,610
+West Kalimantan,1
+Wallonia,3
+Tocantins,4
+Mendoza,6
+Oklahoma,184
+Burgas,1
+Guerrero,11
+City of San Fernando,2
+Latium,102
+Vega Baja,3
+Assam,1
+Mato Grosso,7
+Gelderland,3
+Centre,4
+Commune de Monaco,1
+Faro,4
+St Helier,2
+Abruzzo,4
+Joenkoeping,3
+Galicia,36
+Delta,4
+Michoacan,7
+Vargas,5
+La Pampa,2
+Catalonia,64
+North Holland,17
+Coquimbo,9
+Kilifi,1
+Northern Mindanao,1
+Basque Country,14
+Eastern Visayas,1
+Rivas,1
+Mordoviya,1
+Aveiro,3
+Cortes,14
+Zonguldak,1
+Western Australia,11
+Bogota D.C.,89
+Buenos Aires F.D.,132
+Akita,1
+Belgorod,2
+New York,1902
+More og Romsdal,1
+Lima,86
+Auvergne,6
+Tanger-Tetouan,1
+Khabarovsk Krai,2
+Lambayeque,1
+Chaco,2
+Biobio,31
+Haryana,1
+San Salvador,12
+Los Lagos,10
+Tarija,3
+Cochabamba,1
+Mato Grosso do Sul,5
+Mubarak al Kabir,2
+Apulia,16
+Misiones,1
+Atlantida,1
+Idaho,27
+Odessa,2
+Cluj,1
+Budva,1
+Corrientes,1
+Virginia,362
+Okinawa,2
+Halland,2
+Sergipe,4
+Castille-La Mancha,23
+South Carolina,133
+Arauca,2
+Ulaanbaatar,3
+Talofofo,2
+Chon Buri,2
+Anasco,1
+Hawaii,31
+Kentucky,168
+Puebla,27
+Nueva Esparta,8
+Port Louis,5
+Nova Scotia,54
+Gujarat,3
+Iowa,119
+Alabama,147
+Tachira,24
+Southern Savonia,1
+Portuguesa,5
+Saint George,2
+Goias,16
+Kingston,1
+Daerah Istimewa Yogyakarta,5
+Dalarna,8
+Selangor,30
+Narino,1
+Baden-Wuerttemberg,16
+Lisbon,23
+Pays de la Loire,2
+North Karelia,5
+Kiev,4
+Santander,10
+Toa Alta,3
+Chhattisgarh,1
+Veneto,30
+Paijanne Tavastia,1
+Tekirdag,1
+Rio Negro,3
+Extremadura,9
+Formosa,2
+Santiago,4
+Splitsko-Dalmatinska,1
+Santo Domingo de los Tsachilas,1
+Iwate,1
+Csongrad,1
+Kansas,157
+West Java,40
+Valle del Cauca,17
+Aquitaine,14
+Capital Region,29
+North Sumatra,4
+Saint Andrew,5
+Maale,2
+Haute-Normandie,8
+Wyoming,10
+Mersin,2
+Otago,1
+Al Wakrah,1
+Karabuk,1
+Brittany,12
+Makkah,19
+Jalisco,52
+Shanghai Shi,3
+Trinity Palmetto Point,1
+Navarre,6
+Cordillera,1
+Bahia,42
+Colorado,181
+Kaluga,1
+New Jersey,767
+Ostrobothnia,2
+Washington,232
+Minas Gerais,102
+Duarte,3
+Paramaribo,1
+Roraima,4
+Nonthaburi,5
+San Juan,14
+Metro Manila,87
+Uppsala,8
+Dnipropetrovsk,1
+Pernambuco,41
+Rize,1
+Amman,1
+San Martin,1
+Voronezj,1
+Santiago Metropolitan,231
+Northern Cape,1
+Calabria,9
+Wisconsin,192
+Para,35
+Saskatchewan,18
+Maule,9
+Oregon,133
+Alta Verapaz,1
+Puntarenas,1
+Berlin,11
+Mont-Liban,5
+Maluku Utara,1
+Mintaqat Tabuk,1
+Central,29
+Negeri Sembilan,4
+Ajaria,1
+Florida,816
+Oppland,1
+Western Visayas,4
+Bungoma,1
+Lesser Poland Voivodeship,3
+Balearic Islands,5
+Abia,1
+Ulster,2
+Washington, D.C.,122
+Santa Fe,23
+North Carolina,256
+Budapest,6
+The Marches,5
+Quebec,135
+Aceh,1
+Utrecht,5
+Veracruz,38
+Trujillo,14
+Davao,7
+Sverdlovsk,1
+New South Wales,66
+Central Serbia,8
+Chelyabinsk,2
+Basel-Landschaft,3
+Panama,13
+Delaware,36
+Guarico,1
+San Pedro de Macoris,5
+Lorraine,14
+Homs,2
+Opole Voivodeship,1
+New Mexico,39
+Vaestra Goetaland,10
+Respublika Buryatiya,2
+Balikesir,1
+Asyut,2
+Pristina,4
+Leningrad,1
+Micoud Quarter,2
+Vilnius County,1
+Soedermanland,1
+Esteli,3
+Federal District,57
+Flevoland,3
+Northland,1
+Khartoum,6
+Umbria,7
+Kayseri,1
+Bayamon,4
+Guayanilla,1
+California,2411
+Saint Ann,1
+Queensland,30
+Asuncion,15
+Belize,2
+Santiago del Estero,1
+Georgia,387
+North Dakota,18
+Tokyo,5
+Pennsylvania,637
+Islamabad,1
+Hamburg,8
+Wellington,2
+Connaught,11
+Stockholm,20
+Bengkulu,1
+Muhafazat al Qalyubiyah,8
+Tel Aviv,6
+New Brunswick,19
+Melilla,2
+Republika Srpska,1
+Meknes-Tafilalet,1
+Sicily,42
+Rogaland,1
+Mayaguez,1
+Uasin Gishu,6
+Praha,1
+Canakkale,2
+Taiwan,2
+Villalba,1
+Perak,2
+Penuelas,1
+Guanajuato,27
+Colonia,1
+Santarem,2
+Ehime,1
+Chiba,3
+El Oro,4
+Neuquen,1
+Capital,69
+Valencia,37
+Soccsksargen,2
+Rivers,5
+Atacama,2
+Montevideo,18
+St. Elizabeth,1
+Presidente Hayes,5
+Cauca,2
+Buenos Aires,178
+Baladiyat ad Dawhah,6
+Lviv,1
+Bangkok,34
+Limburg,2
+New Hampshire,48
+Martinique,1
+Central Region,4
+Vermont,25
+La Libertad,11
+Keryneia,1
+Asturias,10
+Nairobi Area,22
+Uusimaa,9
+La Union,1
+Lombardy,88
+El Paraiso,1
+Emilia-Romagna,38
+Muhafazat ad Daqahliyah,3
+Astana Qalasy,1
+Lagos,4
+Jerusalem,1
+Piura,1
+Izmir,19
+Calabarzon,54
+Vinnyts'ka,1
+Tuen Mun,1
+Monsenor Nouel,1
+Ammochostos,1
+Telemark,1
+Krasnoyarskiy,1
+Poitou-Charentes,5
+Masaya,3
+Lajas,3
+Tamil Nadu,13
+Viseu,1
+Kumanovo,4
+Victoria,45
+Connecticut,154
+Ceara,23
+Hordaland,3
+Andalusia,62
+Ilocos,5
+Manisa,1
+Masovian Voivodeship,3
+Picardie,5
+Setubal,6
+Hamilton city,2
+Piaui,3
+Caldas,2
+Atlantico,14
+Samut Prakan,1
+Missouri,203
+Vaesterbotten,2
+Ajman,1
+North Denmark,2
+Alexandria,11
+England,948
+Demerara-Mahaica,2
+South Denmark,4
+Australian Capital Territory,2
+Central Luzon,7
+Marrakech-Tensift-Al Haouz,2
+Eastern Province,15
+Chiang Mai,2
+Ash Shariqah,24
+Rio Grande do Norte,7
+Francisco Morazan,18
+Auckland,7
+Schleswig-Holstein,4
+Punjab,1
+Dededo,3
+Sinaloa,9
+Maputo City,1
+Espirito Santo,16
+Piedmont,21
+Vienna,6
+Newfoundland and Labrador,13
+Chalatenango,1
+Herrera,1
+Montana,22
+Limpopo,1
+Zulia,52
+Carazo,1
+Sonora,24
+Azuay,2
+Castille and Leon,25
+Alajuela,20
+San Jose,44
+Rhode Island,56
+Cojedes,1
+Santa Catarina,72
+Johor,5
+Nakhon Sawan,1
+Pahang,1
+Rio de Janeiro,227
+Attica,14
+Muhafazat Hawalli,4
+Sabana Grande,5
+South Kalimantan,1
+Cajamarca,1
+Yigo,1
+Wanchai,2
+Canelones,16
+Novosibirsk,1
+Karnataka,11
+Canary Islands,21
+Styria,4
+KwaZulu-Natal,7
+Lusaka,2
+Nuevo Leon,72
+Cartago,5
+Kaduna,1
+Scotland,83
+Ponce,2
+Tamaulipas,23
+Manama,1
+Adana,4
+Arkansas,76
+Ljubljana,1
+Grand Casablanca,3
+Matagalpa,2
+Lowgar,1
+Melaka,2
+Lodz Voivodeship,1
+Orange Free State,4
+Mecklenburg-Vorpommern,1
+Bali,4
+Sardinia,7
+La Romana,1
+Quindio,3
+Prince Edward Island,4
+Sabah,2
+Santa Cruz,3
+Kirovohrad,1
+Vaud,6
+Mombasa,3
+Arkhangelskaya,1
+Konya,1
+Akershus,5
+Colima,12
+Midi-Pyrenees,11
+St.-Petersburg,1
+Ceiba,1
+T'bilisi,4
+Central Java,7
+Olancho,1
+Tunis,1
+Canterbury,2
+Barinas,3
+West Pomeranian Voivodeship,1
+Quebradillas,5
+Kericho,1
+Kajiado,1
+Central Finland,1
+Hesse,2
+Telangana,4
+Beijing,2
+Salto,3
+Al Fujayrah,1
+Antioquia,45
+Alto Parana,3
+Catamarca,1
+Santa Elena,1
+Leon,1
+Nizjnij Novgorod,1
+Aisen,2
+Central Macedonia,1
+Aguas Buenas,1
+Carabobo,67
+Morelos,14
+Caguas,1
+Loja,1
+Saxony,1
+Ica,2
+Riga,1
+Nacional,26
+San Luis,2
+Braga,5
+Pirkanmaa,2
+Acre,6
+Shida Kartli,2
+Cair,2
+Sarawak,6
+Nord-Pas-de-Calais,7
+Tarapaca,2
+Guaynabo,15
+Geneva,5
+Akwa Ibom,1
+Utah,82
+Ankara,20
+Greater Accra,6
+South Sulawesi,11
+Lavalleja,3
+Uttar Pradesh,5
+Chuy,1
+Gauteng,41
+Central District,1
+Tucuman,8
+Zamboanga Peninsula,2
+Cusco,1
+Gyeonggi-do,2
+Murcia,12
+Amazonas,27
+Lower Austria,4
+Minsk,5
+Huila,4
+Antalya,10
+North Brabant,1
+Maranhao,14
+North Rhine-Westphalia,30
+Campeche,8
+East Java,19
+Primorskiy,1
+Castries Quarter,1
+Coahuila,19
+Corsica,8
