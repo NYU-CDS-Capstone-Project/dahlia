@@ -8,6 +8,7 @@ def main():
             if dataset == 'exit':
                 raise KeyboardInterrupt
             data = load_data(dataset)
+            
             break
         except KeyboardInterrupt:
             print 'Terminated!'
